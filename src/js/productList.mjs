@@ -18,7 +18,6 @@ export default async function productList(selector, category){
     const item = document.querySelector(selector);
     // get the list of products 
     const products = await getData(category); 
-    console.log(products);
     // render out the product list to the element
     renderListWithTemplate(productCardTemplate,item,products)
 };
